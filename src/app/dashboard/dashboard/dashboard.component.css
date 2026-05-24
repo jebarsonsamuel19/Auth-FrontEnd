@@ -1,0 +1,169 @@
+/* dashboard.component.css */
+.dashboard-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.dashboard-header {
+  text-align: center;
+  padding: 30px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 10px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+  margin: 0 0 10px 0;
+}
+
+.logout-btn {
+  background: rgba(255,255,255,0.2);
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 30px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #eee;
+}
+
+.section-header i {
+  font-size: 24px;
+  color: #0d2d6c;
+}
+
+.section-header h2 {
+  margin: 0;
+  color: #333;
+  font-size: 20px;
+}
+
+/* Cards */
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-body p {
+  margin: 0 0 15px 0;
+  color: #666;
+}
+
+.success-card {
+  background: #e8f5e9;
+  border-left: 4px solid #4caf50;
+}
+
+.success-icon {
+  color: #4caf50;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* Key Instruction */
+.key-instruction {
+  background: #e3f2fd;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #1565c0;
+}
+
+/* Buttons */
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.2s;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-fingerprint {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.btn-usb {
+  background: #0d2d6c;
+  color: white;
+}
+
+.btn-nfc {
+  background: #009688;
+  color: white;
+}
+
+.btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Loading */
+.loading-section {
+  text-align: center;
+  padding: 40px;
+}
+
+.spinner {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #0d2d6c;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 15px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .dashboard-container {
+    padding: 10px;
+  }
+  
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

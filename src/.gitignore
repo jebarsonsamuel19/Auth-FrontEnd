@@ -1,0 +1,19 @@
+# dependencies
+node_modules/
+
+# angular cache
+.angular/
+
+# build output
+dist/
+
+# logs
+npm-debug.log
+yarn-error.log
+
+# IDE
+.vscode/
+.idea/
+
+# system
+.DS_Store
